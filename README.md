@@ -124,4 +124,4 @@ Contributions are welcome! Please open an issue or submit a pull request to help
 This project is licensed under the ISC License.
 
 ## Repository
-For more details and to view the source code, visit the GitHub repository: https://github.com/haewhybabs/react-native-easy-carousel
+For more details and to view the source code, visit the GitHub repository: https://github.com/haewhybabs/react-native-just-carousel
