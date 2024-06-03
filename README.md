@@ -1,4 +1,4 @@
-# react-native-easy-carousel
+# react-native-just-carousel
 
 A simple and easy-to-use carousel component for React Native, designed to provide a smooth and customizable experience for displaying content in a horizontal scrollable view.
 
@@ -15,7 +15,7 @@ A simple and easy-to-use carousel component for React Native, designed to provid
 Install the package using npm:
 
 ```bash
-npm install react-native-easy-carousel
+npm install react-native-just-carousel
 ```
 
 ## Usage
