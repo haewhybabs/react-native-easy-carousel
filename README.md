@@ -17,3 +17,105 @@ Install the package using npm:
 ```bash
 npm install react-native-easy-carousel
 ```
+
+Usage
+Here's a quick example of how to use react-native-easy-carousel in your React Native project:
+
+javascript
+Copy code
+import React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
+import CarouselComponent from 'react-native-easy-carousel';
+
+const App = () => {
+const items = ['Item 1', 'Item 2', 'Item 3'];
+
+const renderItem = (item, index) => (
+<View style={styles.carouselItem}>
+<Text>{item}</Text>
+</View>
+);
+
+return (
+<View style={styles.container}>
+<CarouselComponent
+items={items}
+renderItem={renderItem}
+autoplay
+autoplayInterval={2000}
+onIndexChanged={(index) => console.log('Current index:', index)}
+/>
+</View>
+);
+};
+
+const styles = StyleSheet.create({
+container: {
+flex: 1,
+},
+carouselItem: {
+flex: 1,
+justifyContent: 'center',
+alignItems: 'center',
+backgroundColor: '#ccc',
+},
+});
+
+export default App;
+API
+CarouselComponent
+The main component that handles the horizontal scrolling, autoplay, and pagination.
+
+Props:
+
+items (required): An array of items to be displayed in the carousel.
+onIndexChanged (optional): A callback function that is called when the index changes. Receives the new index as an argument.
+autoplay (optional): A boolean to enable or disable autoplay. Defaults to false.
+autoplayInterval (optional): The interval for autoplay in milliseconds. Defaults to 3000.
+renderItem (required): A function that takes an item and its index and returns a React element to render.
+containerStyle (optional): Custom styles for the container.
+itemStyle (optional): Custom styles for each item.
+Example:
+
+javascript
+Copy code
+<CarouselComponent
+items={items}
+renderItem={renderItem}
+autoplay
+autoplayInterval={2000}
+onIndexChanged={(index) => console.log('Current index:', index)}
+containerStyle={{ backgroundColor: 'white' }}
+itemStyle={{ padding: 10 }}
+/>
+Customization
+You can customize the carousel and its items by modifying the styles or adding additional props to the components.
+
+Styles:
+
+You can pass custom styles to the container and item components via the containerStyle and itemStyle props.
+
+javascript
+Copy code
+<CarouselComponent
+items={items}
+renderItem={renderItem}
+containerStyle={{ backgroundColor: 'white' }}
+itemStyle={{ padding: 10 }}
+/>
+Example
+Check out the example provided to see how to integrate the carousel into your app.
+
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request to help improve the package.
+
+License
+This project is licensed under the ISC License.
+
+Repository
+For more details and to view the source code, visit the GitHub repository: https://github.com/haewhydev/react-native-easy-carousel
+
+css
+Copy code
+
+This updated `README.md` file now includes a usage example in the appropriate section.
