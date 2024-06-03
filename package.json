@@ -2,7 +2,7 @@
   "name": "react-native-easy-carousel",
   "version": "1.0.0",
   "description": "A simple and easy-to-use carousel component for React Native, designed to provide a smooth and customizable experience for displaying content in a horizontal scrollable view.",
-  "main": "index.js",
+  "main": "App.tsx",
   "scripts": {
     "test": "npm test"
   },
