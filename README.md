@@ -20,12 +20,12 @@ npm install react-native-just-carousel
 
 ## Usage
 
-Here's a quick example of how to use react-native-easy-carousel in your React Native project:
+Here's a quick example of how to use react-native-just-carousel in your React Native project:
 
 ```javascript
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import CarouselComponent from "react-native-easy-carousel";
+import CarouselComponent from "react-native-just-carousel";
 
 const App = () => {
   const items = ["Item 1", "Item 2", "Item 3"];
